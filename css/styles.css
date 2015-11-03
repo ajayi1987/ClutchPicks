@@ -1,0 +1,134 @@
+body {
+  background:url(../img/clutchpicksheader1.jpg)no-repeat center center fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+
+
+}
+
+a {
+  color:white;
+}
+
+.btn-primary, .btn-primary.active {
+  color: #fff;
+  background-color: rgba(126, 129, 132, 0);
+  border-color: #FFFFFF;
+  width: 200px;
+  margin-left: 200px;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color:black;
+}
+
+.col-md-6 {
+  margin-left: 300px;
+}
+
+footer {
+  margin-top: 200px;
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 10px;
+}
+.form-control {
+  background-color: rgba(126, 129, 132, 0);
+  margin-left: 15px;
+  font-family: 'Oxygen', sans-serif;
+  width: 250px;
+  border-color: #FFFFFF;
+  color: white !important;
+}
+.form-control::-webkit-input-placeholder {
+  color: white;
+}
+
+
+.form-inline {
+  font-family: 'Oxygen', sans-serif;
+  color: white;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  color:white;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  color:white;
+  font-weight: 500;
+
+}
+
+.jumbotron {
+  margin-top: 50px;
+  margin-left: -20px;
+  width:1200px;
+  height: 500px;
+  background-color: rgba(200, 218, 229, .40);
+
+}
+
+.jumbotron i {
+  margin-left: 450px;
+  color: white;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-left: 400px;
+    font-weight: 300;
+    font-family: 'Oxygen', sans-serif;
+
+  }
+
+.main {
+  width:100%
+}
+.main h1 {
+color: white;
+text-align: center;
+margin-top: 50px;
+font-family: 'Raleway', sans-serif;
+font-size: 150px;
+}
+.navbar {
+  min-height: 30px;
+}
+.navbar-nav > li > a, .navbar-brand {
+  padding-top: 5px;
+  padding-bottom: 0;
+  height:30px;
+}
+
+.navbar li {
+  font-family: 'Oxygen', sans-serif;
+}
+.navbar-brand {
+  float: left;
+  padding-top:7px;
+  font-size: 18px;
+  line-height: 20px;
+  color: red;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.section-header {
+      margin-left: -250px;
+      margin-top: 15px;
+      width: 500px;
+}
+
+.subscribe {
+  margin-left: 250px;
+  margin-top:10px;
+  font-family: 'Oxygen', sans-serif;
+
+}
