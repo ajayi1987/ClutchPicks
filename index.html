@@ -10,6 +10,7 @@
   <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
   <link href="js/bootstrap.js" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,700,600,500,300,200,100' rel='stylesheet' type='text/css'>
+  <link href='js/main.js' rel="stylesheet">
 
 
   <!-- jQuery is required for Bootstrap to work -->
@@ -18,11 +19,8 @@
   <!-- Latest compiled and minified Bootstrap JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-  <!-- Time Script -->
-  <script> document.getElementById("todayspicks").innerHTML = Date();</script>
-
 </head>
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <section class="container" id="home">
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-fnt" role="navigation">
       <nav class="container-fluid">
@@ -41,7 +39,7 @@
             <li><a href="#picks">Today's Picks</a></li>
             <li><a href="#packages">Packages</a></li>
             <li><a href="#record">Our Record</a></li>
-            <li><a href="#about">Why Us?</a></li>
+            <li><a href="#whyus">Why Us?</a></li>
           </ul>
         </nav>
       </nav>
@@ -49,20 +47,131 @@
     <!-- Main Section -->
     <section class="main">
       <h1>Welcome to ClutchPicks</h1>
-          <form class="form-inline">
-            <label for="Email Address">Subscribe to get free picks daily!</label>
-            <input type="text" class="form-control" placeholder="Email Address">
-        </form>
-        <div class="subscribe">
+      <form class="form-inline">
+        <label for="Email Address">Subscribe to get free picks daily!</label>
+        <input type="text" class="form-control" placeholder="Email Address">
+      </form>
+      <div class="subscribe">
         <a href="#" class="btn btn-primary btn-sm active" role="button">Subscribe</a>
       </div>
       <h2> Our Guarantee:</h2>
-      <h3> We guarantee to get 75% of our picks correct daily or you get your money back. Simple as that. No questions asked.</h3>
+      <h3> We guarantee to get 60% of our picks correct daily or you get your money back. Simple as that. No questions asked.</h3>
+    </section>
+    <!-- Today's Picks -->
+    <section id="picks">
+      <h2 class="todayspicks">Today's Picks</h2>
+      <h3> Our picks are tracked by <a href="www.cappertek.com">CapperTek.com</a> One of the most largest and trusted leaders in sports handicapping service directories.Our current record year to date is (129-117)</h3>
+
+      <!-- Packages -->
+      <section id="packages">
+        <h2 class="packages">Our Packages</h2>
+        <section id="pricing-table">
+          <div class="container">
+            <div class="row">
+              <div class="pricing">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="pricing-table">
+                    <div class="pricing-header">
+                      <p class="pricing-title">3 Day Package</p>
+                      <p class="pricing-rate"><sup>$</sup> 19 <span>Week</span></p>
+                      <a href="#" class="btn btn-custom">Sign Up</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="pricing-table">
+                    <div class="pricing-header">
+                      <p class="pricing-title">1 Month Package</p>
+                      <p class="pricing-rate"><sup>$</sup> 199 <span>Mo.</span></p>
+                      <a href="#" class="btn btn-custom">Sign Up</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="pricing-table">
+                    <div class="pricing-header">
+                      <p class="pricing-title">Season Package</p>
+                      <p class="pricing-rate"><sup>$</sup> 499 <span>Mo.</span></p>
+                      <a href="#" class="btn btn-custom">Sign Up</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
-      <!-- Today's Picks -->
-      <section id="picks">
-        <h2 id="todayspicks">Today's Picks</h2>
-        <h3> Our picks are tracked by <a href="www.cappertek.com">CapperTek.com</a> One of the most largest and trusted leaders in sports handicapping service directories.Our current record year to date is (129-117)</h3>
+
+      <!-- Our Record -->
+      <section id="record">
+        <h2> 2015 Season Record </h2>
+        <table class="tablerecords">
+          <tr class="tableheader">
+            <th>Sport</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th> Push</th>
+            <th>ROI</th>
+          </tr>
+          <tr>
+            <td>NFL</td>
+            <td>29</td>
+            <td>27</td>
+            <td>5</td>
+            <td>+0.83%</td>
+          </tr>
+          <tr>
+            <td>NCAA Football</td>
+            <td>44</td>
+            <td>40</td>
+            <td>1</td>
+            <td>+5.49%</td>
+          </tr>
+          <tr>
+            <td>NBA</td>
+            <td>23</td>
+            <td>22</td>
+            <td>0</td>
+            <td>-4.14%</td>
+          </tr>
+          <tr>
+            <td>NCAA Basketball</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>-4.55%</td>
+            <tr>
+              <td>MLB <span>Season Complete</span></td>
+              <td>70</td>
+              <td>54</td>
+              <td>0</td>
+              <td>+17.64%</td>
+            </tr>
+          </tr>
+        </table>
+      </section>
+      <!-- Why Us? -->
+      <section id="whyus">
+        <h2>Why Us?</h2>
+        <h3>Why ClutchPicks? When you're on a losing streak and just need a win to get you back in the winners circle, you can count on
+          us. ClutchPicks gives you the big win you been waiting for!</h3>
+        </section>
+  <!--Animate Scroll -->
+        <script type="text/javascript">
+        var $root = $('html, body');
+        $('.navbar-nav a').click(function() {
+          var href = $.attr(this, 'href');
+          $root.animate({
+            scrollTop: $(href).offset().top
+          }, 500, function () {
+            window.location.hash = href;
+          });
+          return false;
+        });
+        </script>
+
         <footer>
 
           </footer
